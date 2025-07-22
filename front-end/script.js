@@ -1,5 +1,6 @@
-document.querySelector('.submit').addEventListener('click', function(e) {
-  e.preventDefault(); 
+
+document.querySelector('.submit').addEventListener('click', function (e) {
+  e.preventDefault();
 
   const nome = document.getElementById('name').value;
   const setor = document.getElementById('setor').value;
@@ -12,12 +13,20 @@ document.querySelector('.submit').addEventListener('click', function(e) {
     },
     body: JSON.stringify({ nome, setor, problema })
   })
-  .then(res => res.text())
-  .then(data => {
-    alert('Ticket enviado com sucesso!');
-  })
-  .catch(err => {
-    alert('Erro ao enviar o ticket.');
-    console.error(err);
-  });
+    .then(res => res.text())
+    .then(data => {
+      Swal.fire({
+        icon: 'success',
+        title: 'Enviado!',
+        text: 'Seu chamado foi aberto com sucesso.'
+      });
+    })
+    .catch(err => {
+      Swal.fire({
+        icon: 'error',
+        title: 'Erro',
+        text: 'Ocorreu um erro ao enviar o chamado.'
+      });
+      console.error(err);
+    });
 });
