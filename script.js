@@ -6,13 +6,13 @@ document.querySelector('.submit').addEventListener('click', function (e) {
   const sector = document.getElementById('sector').value;
   const problem = document.getElementById('problem').value;
 
-  fetch('http://localhost:8080/tickets', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ name, sector, problem })
-  })
+  fetch('https://helpdesk-backend-production-372a.up.railway.app/tickets', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ name, sector, problem })
+})
     .then(res => res.text())
     .then(data => {
       Swal.fire({
