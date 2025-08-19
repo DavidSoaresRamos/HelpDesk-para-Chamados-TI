@@ -33,4 +33,4 @@ O projeto foi construído utilizando uma arquitetura **Full Stack**, com **Java 
 🔗 **Acesse o projeto online:**  
 👉 [Dashboard HelpDesk](https://dashboard-helpdesk.vercel.app/requests)  
 👉 [Formulário de chamados](https://davidsoaresramos.github.io/HelpDesk-para-Chamador-TI/)  
-👉 [BackeEnd](https://github.com/DavidSoaresRamos/Helpdesk-Backend) Atualmente privado para fins de segurança
+👉 [Back-End](https://github.com/DavidSoaresRamos/Helpdesk-Backend) 
