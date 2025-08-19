@@ -18,7 +18,9 @@ O projeto foi construído utilizando uma arquitetura **Full Stack**, com **Java 
 - Registro de chamados com **nome, setor e problema**  
 - Listagem de solicitações em uma **tabela dinâmica (Angular Material)**  
 - Integração **front-end e back-end via API REST**  
-- Interface moderna, responsiva e de fácil utilização  
+- Interface moderna, responsiva e de fácil utilização
+- Controle de dispositivos
+- Quadro de tarefas (Kanban)
 
 ---
 
