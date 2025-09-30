@@ -6,7 +6,7 @@ document.querySelector('.submit').addEventListener('click', function (e) {
   const sector = document.getElementById('sector').value;
   const problem = document.getElementById('problem').value;
 
-  fetch('https://helpdesk-backend-production-372a.up.railway.app/tickets', {
+  fetch('http://localhost:8080/tickets', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
