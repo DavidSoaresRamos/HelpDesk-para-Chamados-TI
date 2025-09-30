@@ -6,7 +6,7 @@ document.querySelector('.submit').addEventListener('click', function (e) {
   const sector = document.getElementById('sector').value;
   const problem = document.getElementById('problem').value;
 
-  fetch('http://localhost:8080/tickets', {
+  fetch('https://private-helpdesk-backend.onrender.com/tickets', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
