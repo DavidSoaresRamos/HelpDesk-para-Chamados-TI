@@ -36,7 +36,9 @@ body {
 }
 
 .tittle h1 span {
-  color: #0a0c08;
+  background: linear-gradient(90deg, #00CFFF, #8B5CF6);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
 
