@@ -1,144 +1,192 @@
 /* Reset básico */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background: linear-gradient(135deg, #1d1f27, #2a2d38);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  color: #f1f1f1;
+    background: linear-gradient(135deg, #1d1f27, #2a2d38);
+    min-height: 100vh;
+    display: flex;
+    /* Ajuste: Usamos flex-direction: column para empilhar o FORM e o CONTAINER de links */
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #f1f1f1;
 }
 
 /* Container do formulário */
 .container {
-  background-color: #1e1e2f;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-  width: 100%;
-  max-width: 500px;
-  animation: fadeIn 0.8s ease-in-out;
+    background-color: #1e1e2f;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 0.8s ease-in-out;
 }
 
-/* Título */
+/* Título e campos... (Manter o restante do seu CSS original) */
 .tittle h1 {
-  font-size: 2.5rem;
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 10px;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .tittle h1 span {
-  background: linear-gradient(90deg, #00CFFF, #8B5CF6);
- -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
-  font-weight: bold;
+    background: linear-gradient(90deg, #00CFFF, #8B5CF6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
 
 .tittle p {
-  text-align: center;
-  color: #ccc;
-  margin-bottom: 30px;
-  font-size: 1rem;
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 30px;
+    font-size: 1rem;
 }
 
-/* Campos do formulário */
 .ticket label {
-  display: block;
-  margin-bottom: 5px;
-  color: #bbb;
-  font-size: 0.95rem;
+    display: block;
+    margin-bottom: 5px;
+    color: #bbb;
+    font-size: 0.95rem;
 }
 
 .ticket input[type="text"],
 .ticket2 textarea {
-  width: 100%;
-  padding: 12px 15px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 10px;
-  background-color: #2e2e3e;
-  color: #fff;
-  font-size: 1rem;
-  transition: 0.3s;
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2e2e3e;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.3s;
 }
 
 .ticket input:focus,
 .ticket2 textarea:focus {
-  outline: none;
-  background-color: #3c3c4f;
-  box-shadow: 0 0 5px #00bcd4;
+    outline: none;
+    background-color: #3c3c4f;
+    box-shadow: 0 0 5px #00bcd4;
 }
 
-/* Textarea */
 .ticket2 textarea {
-  height: 100px;
-  resize: vertical;
+    height: 100px;
+    resize: vertical;
 }
 
-/* Botão */
 .submit {
-  width: 100%;
-  padding: 14px;
-  background: #00bcd4;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
+    width: 100%;
+    padding: 14px;
+    background: #00bcd4;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px; /* Adiciona margem após o botão Enviar */
 }
 
 .submit:hover {
-  background-color: #0097a7;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+    background-color: #0097a7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+}
+
+/* Rodapé dentro do formulário */
+footer {
+    text-align: center;
+    margin-top: 10px; /* Pequena margem após o botão */
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* NOVO BLOCO: Container dos links fora do formulário */
+.external-links-container {
+    width: 100%;
+    max-width: 500px; /* Mesma largura máxima do formulário para alinhamento */
+    margin-top: 25px; /* Espaço entre o formulário e os links */
+    padding: 0 20px; 
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Centraliza os botões no container externo */
+    gap: 20px; /* Espaço entre os botões */
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+.social-links a:hover {
+    transform: translateY(-1px);
+}
+
+.whatsapp-link {
+    background-color: #25D366; 
+}
+
+.whatsapp-link:hover {
+    background-color: #1DA851;
+}
+
+.linkedin-link {
+    background-color: #0077B5;
+}
+
+.linkedin-link:hover {
+    background-color: #005f91;
 }
 
 /* Animação */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* Responsivo */
+/* Responsivo (Media Query) */
 @media (max-width: 500px) {
-  .container {
-    padding: 25px 20px;
-  }
+    .container {
+        padding: 25px 20px;
+    }
 
-  .tittle h1 {
-    font-size: 2rem;
-  }
+    .tittle h1 {
+        font-size: 2rem;
+    }
 
-  .tittle p {
-    font-size: 0.95rem;
-  }
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-  .submit {
-    font-size: 0.95rem;
-    padding: 12px;
-  }
-}
-
-
-footer {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 0.9rem;
-  color: #888;
+    .social-links a {
+        justify-content: center;
+    }
 }
