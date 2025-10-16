@@ -11,7 +11,7 @@ document.querySelector('.submit').addEventListener('click', function (e) {
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ name, sector, problem })
+    body: JSON.stringify({ name, sector, problem, status: 'ABERTO' })
 })
     .then(res => res.text())
     .then(data => {
