@@ -14,27 +14,27 @@ body {
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 15px 20px;
     color: #f1f1f1;
 }
 
 /* Container do formulário */
 .container {
     background-color: #1e1e2f;
-    padding: 40px;
+    padding: 35px;
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     animation: fadeIn 0.8s ease-in-out;
 }
 
 /* Título e campos... (Manter o restante do seu CSS original) */
 .tittle h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #ffffff;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .tittle h1 span {
@@ -47,27 +47,28 @@ body {
 .tittle p {
     text-align: center;
     color: #ccc;
-    margin-bottom: 30px;
-    font-size: 1rem;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
 }
 
 .ticket label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     color: #bbb;
     font-size: 0.95rem;
+    font-weight: 500;
 }
 
 .ticket input[type="text"],
 .ticket2 textarea {
     width: 100%;
     padding: 12px 15px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     border: none;
     border-radius: 10px;
     background-color: #2e2e3e;
     color: #fff;
-    font-size: 1rem;
+    font-size: 0.95rem;
     transition: 0.3s;
 }
 
@@ -79,22 +80,22 @@ body {
 }
 
 .ticket2 textarea {
-    height: 100px;
+    height: 90px;
     resize: vertical;
 }
 
 .submit {
     width: 100%;
-    padding: 14px;
+    padding: 12px;
     background: #00bcd4;
     color: #fff;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
-    margin-bottom: 20px; /* Adiciona margem após o botão Enviar */
+    margin-bottom: 15px; /* Adiciona margem após o botão Enviar */
 }
 
 .submit:hover {
@@ -106,16 +107,16 @@ body {
 /* Rodapé dentro do formulário */
 footer {
     text-align: center;
-    margin-top: 10px; /* Pequena margem após o botão */
-    font-size: 0.9rem;
+    margin-top: 5px; /* Pequena margem após o botão */
+    font-size: 0.85rem;
     color: #888;
 }
 
 /* NOVO BLOCO: Container dos links fora do formulário */
 .external-links-container {
     width: 100%;
-    max-width: 500px; /* Mesma largura máxima do formulário para alinhamento */
-    margin-top: 25px; /* Espaço entre o formulário e os links */
+    max-width: 600px; /* Mesma largura máxima do formulário para alinhamento */
+    margin-top: 15px; /* Espaço entre o formulário e os links */
     padding: 0 20px; 
     animation: fadeIn 0.8s ease-in-out;
 }
@@ -123,13 +124,13 @@ footer {
 .social-links {
     display: flex;
     justify-content: center; /* Centraliza os botões no container externo */
-    gap: 20px; /* Espaço entre os botões */
+    gap: 15px; /* Espaço entre os botões */
 }
 
 .social-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 10px 15px;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.3s;
@@ -188,5 +189,128 @@ footer {
 
     .social-links a {
         justify-content: center;
+    }
+}
+
+/* Otimização para resolução 1366x788 (notebooks padrão) */
+@media (max-width: 1400px) and (max-height: 900px) {
+    body {
+        padding: 10px 20px;
+    }
+
+    .container {
+        padding: 30px;
+        max-width: 550px;
+    }
+
+    .tittle h1 {
+        font-size: 2rem;
+        margin-bottom: 6px;
+    }
+
+    .tittle p {
+        margin-bottom: 15px;
+        font-size: 0.9rem;
+    }
+
+    .ticket label {
+        margin-bottom: 4px;
+        font-size: 0.9rem;
+    }
+
+    .ticket input[type="text"],
+    .ticket2 textarea {
+        padding: 10px 12px;
+        margin-bottom: 15px;
+        font-size: 0.9rem;
+    }
+
+    .ticket2 textarea {
+        height: 75px;
+    }
+
+    .submit {
+        padding: 10px;
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+    }
+
+    footer {
+        margin-top: 3px;
+        font-size: 0.8rem;
+    }
+
+    .external-links-container {
+        max-width: 550px;
+        margin-top: 10px;
+        padding: 0 15px;
+    }
+
+    .social-links {
+        gap: 12px;
+    }
+
+    .social-links a {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+        gap: 6px;
+    }
+}
+
+/* Otimização para telas de 16 polegadas (1920px+) */
+@media (min-width: 1920px) {
+    .container {
+        padding: 60px;
+        max-width: 900px;
+    }
+
+    .tittle h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+    }
+
+    .tittle p {
+        font-size: 1.3rem;
+        margin-bottom: 40px;
+    }
+
+    .ticket label {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .ticket input[type="text"],
+    .ticket2 textarea {
+        padding: 18px 20px;
+        margin-bottom: 30px;
+        font-size: 1.15rem;
+    }
+
+    .ticket2 textarea {
+        height: 150px;
+    }
+
+    .submit {
+        padding: 18px;
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 1.1rem;
+    }
+
+    .external-links-container {
+        max-width: 900px;
+        margin-top: 40px;
+    }
+
+    .social-links {
+        gap: 30px;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+        padding: 14px 25px;
+        gap: 12px;
     }
 }
